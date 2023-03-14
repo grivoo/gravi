@@ -1,0 +1,6 @@
+declare_args() {
+    use_platform_icu_alternatives = false
+}
+
+use_platform_icu_alternatives =
+    use_platform_icu_alternatives && current_toolchain == default_toolchain

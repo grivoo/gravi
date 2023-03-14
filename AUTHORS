@@ -1,0 +1,11 @@
+# os nomes devem ser adicionados nesse arquivo de acordo com esses parâmetros
+#
+# para caso individual
+#   nome <endereço de email>
+#
+# para caso de organização
+#   organização <parâmetro fnmatch>
+#
+# veja a documentação de module do fnmtatch do python para mais informações.
+
+grivo <notgrivo@gmail.com>
