@@ -1,0 +1,8 @@
+# esse arquivo é usado pelo git-cl para obter algumas informações específicas do repositório.
+
+PROJECT: gravi
+GERRIT_HOST: True
+CC_LIST: gravi-reviews@chromium.org
+VIEW_VC: https://chromium.googlesource.com/chromium/src/+/
+STATUS: http://chromium-status.appspot.com/status
+RUN_POST_UPLOAD_HOOK: True
