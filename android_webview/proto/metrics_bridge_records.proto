@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package org.chromium.android_webview.proto;
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "org.chromium.android_webview.proto";
+
+// próxima tag: 9
+message HistogramRecord {
+    // próxima tag: 5
+    enum RecordType {
+        HISTOGRAM_BOOLEAN = 0;
+        HISTOGRAM_EXPONENTIAL = 1;
+        HISTOGRAM_LINEAR = 2;
+        HISTOGRAM_SPARSE = 3;
+
+        USER_ACTION = 4;
+    }
+
+    RecordType record_type = 1;
+
+    // o nome do histogram
+    string histogram_name = 2;
+
+    int32 sample = 3;
+    int32 min = 4;
+    int32 max = 5;
+    int32 num_buckets = 6;
+
+    message Metadata {
+        int64 time_recorded = 1;
+    }
+
+    Metadata metadata = 7;
+
+    // usado apenas para |record_type| == USER_ACTIVITY
+    int64 elapsed_realtime_millis = 8;
+}

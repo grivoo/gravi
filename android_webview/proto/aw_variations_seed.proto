@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package android_webview;
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "org.chromium.android_webview.proto";
+
+message AwVariationsSeed {
+    optional string signature = 1;
+    optional string country = 2;
+    optional string date_header = 3 [deprecated = true];
+    optional bool is_gzip_compressed = 4;
+    optional bytes seed_data = 5;
+    optional int64 date = 6;
+}
