@@ -1,0 +1,10 @@
+set noparent
+
+# primário
+notgrivo@gmail.com
+
+# secundário
+gyket.pentst.133971@protonmail.com
+
+per-file BUILD.gn=file://net/nqe/OWNERS
+per-file BUILD.gn=file://net/websockets/OWNERS
